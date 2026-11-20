@@ -15,4 +15,9 @@ export default defineConfig({
   schema: {
     types: schemaTypes,
   },
+
+  // Exactly one `skills` document, with the fixed id "skills"
+  document: {
+    singletons: ['skills'],
+  },
 })
